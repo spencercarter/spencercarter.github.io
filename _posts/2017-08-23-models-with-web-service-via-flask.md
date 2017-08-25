@@ -2,7 +2,8 @@
 layout: post
 title:  "An Introduction to Running Predictive Models via Web Service with Flask"
 date:   2017-08-24 17:59:44 -0400
-categories: jekyll update
+category: programming
+tags: [python, flask, modeling]
 ---
 
 Have you ever needed to score data with a predictive model in (near) real time, using a remote server/machine? While resources related to creating web services are plentiful, not many approach it from the angle of model scoring.
@@ -162,7 +163,7 @@ Read it as a series, shaped (p,). Then,
 .to_frame().T
 ```
 
-Sends that series to a DataFrame, and transpose to get the (1,p) shape out model will expect.
+Sends that series to a DataFrame, and transposes to get the (1,p) shape out model will expect.
 
 Now the model is in memory, and we have a scoring function! Let's set up the web service.
 
