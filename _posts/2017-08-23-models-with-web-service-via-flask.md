@@ -14,7 +14,7 @@ In this post, we're going to assume an understanding of predictive modeling and 
 
 Individual files to run all three can be found in [this gist](https://gist.github.com/spencercarter/b4a16e9924a6dab46c9dd604860444d3) which is also linked in each section header.
 
-*This guide is by no means definitive, but is straightforward and effective.*
+*This guide is by no means definitive, but I hope you'll find the method straightforward and effective.*
 
 ___
 
