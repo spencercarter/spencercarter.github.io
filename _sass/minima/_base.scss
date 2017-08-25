@@ -7,8 +7,8 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
-
-
+/*$spacing-unit:     100px;*/
+$content-width:     1000px;
 
 /**
  * Basic styling
@@ -163,8 +163,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -178,7 +178,6 @@ pre {
     padding-left: $spacing-unit / 2;
   }
 }
-
 
 
 /**
