@@ -163,7 +163,7 @@ Read it as a series, shaped (p,). Then,
 .to_frame().T
 ```
 
-Sends that series to a DataFrame, and transposes to get the (1,p) shape out model will expect.
+Sends that series to a DataFrame, and transposes to get the (1,p) shape our model will expect.
 
 Now the model is in memory, and we have a scoring function! Let's set up the web service.
 
