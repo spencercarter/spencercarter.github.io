@@ -5,7 +5,7 @@ date:   2017-08-24 17:59:44 -0400
 categories: jekyll update
 ---
 
-Have you ever needed to score data with a predictive model in (near) real time, using a remote server/machine? While resrouces related to creating web services are plentiful, not many apprach it from the angle of model scoring.
+Have you ever needed to score data with a predictive model in (near) real time, using a remote server/machine? While resources related to creating web services are plentiful, not many approach it from the angle of model scoring.
 
 In this post, we're going to assume an understanding of predictive modeling and python, to focus on a simple way to set up a web service that can receive data and return model predictions over the internet. The post is divided into three parts:
   1. Model
