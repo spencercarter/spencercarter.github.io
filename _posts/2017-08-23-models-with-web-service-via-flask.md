@@ -22,7 +22,7 @@ ___
 <br>
 
 # [Part 1: Model](https://gist.github.com/spencercarter/b4a16e9924a6dab46c9dd604860444d3#file-model_web_service_flask_post_p1-py)
-To get a model going, let's just fit a simple LASSO with K-fold on the Boston data
+To get a model going, let's just fit a simple LASSO with K-fold on the Boston housing data
 This is a quick model just to get something running in our web service. It's roughly based on [This example code from sklearn](http://scikit-learn.org/stable/auto_examples/feature_selection/plot_select_from_model_boston.html#sphx-glr-auto-examples-feature-selection-plot-select-from-model-boston-py). 
 
 
@@ -195,7 +195,7 @@ If you turn off *silent*, it outputs:
 
      * Running on http://127.0.0.1:1234/ (Press CTRL+C to quit)
     
-By default, Flask will print to the log every time a request is made to the web service. It's also possible to set the "level" of event you want to log (like only errors). I'm disabling it here to reduce output volume, but in practice, logging is probably a good idea.
+By default, Flask will print to the log every time a request is made to the web service. I'm disabling it here to reduce output volume, but in practice, logging is probably a good idea. It's also possible to set the "level" of event you want to log (like only errors). 
 	
 Let's break the key pieces of Flask down:
 
@@ -225,7 +225,7 @@ ___
 
 Home stretch! Now we just need a way to send data to our web service.
 
-We'll to generate test cases from our data, passed as a JSON. To make things a little simpler here, we're going to make a sender that takes a row number, and sends a JSON of the data to our web service).
+We'll to generate test cases from our data, passed as a JSON. To make things a little simpler here, we're going to make a sender that takes a row number, and sends a JSON of the data to our web service.
 
 ```python
 def make_a_post(indx):
@@ -249,7 +249,7 @@ if req.status_code != 200:
 	return .0
 ```
 
-Is important because web requests use a status code to determine success (you've probably seen "404 Not Found" before). Status code 200 indicates success, and all others indicate something failed. As a simple failsafe, we'll return 0.0 to signal a failure.
+Is included because web requests use a status code to determine success (you've probably seen "404 Not Found" before). Status code 200 indicates success, and all others indicate something failed. As a simple failsafe, we'll return 0.0 to signal a failure.
 
 Finally, let's toss observation 0 to the web service. We know from earlier, that it should return 30.505530469875787, rounded to 2 decimal-places. 
 
