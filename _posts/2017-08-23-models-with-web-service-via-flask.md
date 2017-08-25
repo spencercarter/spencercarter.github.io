@@ -59,7 +59,7 @@ Outputs:
     Model fit. R-Squared = 71.06%
     
 
-This is enough for our demonstration... We're assuming a basic familiarity with modeling concepts like variable selection/engineering and the use of test data.
+This is enough for our demonstration... I'm assuming a basic familiarity with modeling concepts like variable selection/engineering and the use of test data, which are noticeable absent here.
 
 Now, we're going to save the current objects down to disk so our listener and sender can access them. In the individual files, part 2 and 3 will begin with loading the objects in this pickle.
 
