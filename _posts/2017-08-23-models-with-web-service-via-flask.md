@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "An Introduction to Running Predictive Models via Web Service with Flask"
+title:  "An Introduction to Running Predictive Models via Web Service"
+excerpt: "This is a quick and dirty guide to setting up a model scoring web service in Python with Flask. Included is both a walkthrough, and gist containing the necessary code."
 date:   2017-08-24 17:59:44 -0400
 category: programming
 tags: [python, flask, modeling]
